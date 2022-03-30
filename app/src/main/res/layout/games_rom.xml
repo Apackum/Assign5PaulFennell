@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="7dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:background="@color/End_Purple"
+        android:alpha="0.5">
+
+        <TextView
+            android:id="@+id/games_row_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/bungee"
+            android:gravity="start"
+            android:padding="3dp"
+            android:text="@string/name_username"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    <ImageButton
+        android:src="@android:drawable/ic_menu_share"
+        android:layout_width="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content"
+        android:id="@+id/games_row_share_button"
+        android:padding="10dp"
+        android:contentDescription="@string/a_share_button_for_achievement" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/games_image_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:adjustViewBounds="false"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/phfpro"/>
+
+
+        <TextView
+            android:id="@+id/games_title_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee"
+            android:padding="12dp"
+            android:text="@string/achievement_title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/games_Description_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee"
+            android:padding="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="15dp"
+            android:text="@string/description_of_achievement"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/games_time_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee"
+            android:padding="6dp"
+            android:text="@string/created_date"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
