@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-;
+
 import com.example.sdafinalass.R;
 
 import java.util.ArrayList;
@@ -84,7 +84,7 @@ public class LibraryViewAdapter extends RecyclerView.Adapter<LibraryViewAdapter.
     }
 
     /**
-     * sets the varible to the holder and images
+     * sets the variable to the holder and images
      * @param viewHolder
      * @param position
      */
@@ -106,7 +106,7 @@ public class LibraryViewAdapter extends RecyclerView.Adapter<LibraryViewAdapter.
      * get the size of the items
      * @return
      */
-    //Set item count to the number of booklist items
+    //Set item count to the number of book list items
     @Override
     public int getItemCount() {
         return currentGames.size();
