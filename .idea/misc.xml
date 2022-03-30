@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/drawable/gradient_pf.xml" value="0.2625" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/drawable/outline_input.xml" value="0.2625" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/layout/activity_create_account.xml" value="0.3015625" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/layout/activity_login.xml" value="0.3015625" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/layout/activity_main.xml" value="0.2875" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/layout/activity_post_login_add_achievement.xml" value="0.3015625" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/layout/fragment_achievement_list.xml" value="0.3015625" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/layout/fragment_current_games_list.xml" value="0.25092592592592594" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/layout/fragment_rss_feed.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/layout/fragment_welcome.xml" value="0.30052083333333335" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/layout/games_rom.xml" value="0.3015625" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/layout/list_view_change.xml" value="0.3458333333333333" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/layout/recycler_list_item.xml" value="0.25092592592592594" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/menu/menu.xml" value="0.5421875" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2625" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2625" />
+        <entry key="..\:/Users/Paul/AndroidStudioProjects/SDAFINALASS/app/src/main/res/mipmap-anydpi-v26/pf_launcher.xml" value="0.2625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

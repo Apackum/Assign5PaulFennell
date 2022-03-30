@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "901094696859",
+    "firebase_url": "https://sdafinalprojectpaulfennell-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "sdafinalprojectpaulfennell",
+    "storage_bucket": "sdafinalprojectpaulfennell.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901094696859:android:76b635dfb4dd6dee04e33e",
+        "android_client_info": {
+          "package_name": "com.example.sdafinalass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901094696859-596bib0aofhqfo0qrt0prgb6h8jmuov4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sdafinalass",
+            "certificate_hash": "a7b7155c74be6f3e25134504c3cd47d0c7770de3"
+          }
+        },
+        {
+          "client_id": "901094696859-rv0mhfdn4bikdrbr8hb45q2dshsq47l4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlJY9uiPzoQKpKEjxwq4GWvORjR3nFsVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901094696859-rv0mhfdn4bikdrbr8hb45q2dshsq47l4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
