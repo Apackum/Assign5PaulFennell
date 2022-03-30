@@ -136,7 +136,6 @@ public class WelcomeFragment extends Fragment {
 
         return view;
 
-
     }
 
     /**

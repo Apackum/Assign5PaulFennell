@@ -94,10 +94,8 @@ public class RssFeedFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         new ProcessInBackground().execute();
-
-
-
 
         return view;
     }
@@ -114,7 +112,6 @@ public class RssFeedFragment extends Fragment {
             return null;
         }
     }
-
 
     @SuppressLint("StaticFieldLeak")
     public class ProcessInBackground extends AsyncTask<Integer, Void, Exception> {
