@@ -1,0 +1,3 @@
+# Assign5PaulFennell
+This is my fianl assignment project in the SDA module
+I chose to create an all-in-one Games library/tracker which allows the user to browse and explore all of the available games on the Play Station 5 (PS5). Not only can the user browse all PS5 games, but they can keep up to date with the most recent PS5 news as the app includes an auto updating news fragment. In addition, the user can also create and personalise their gaming achievements using a journal entry style interface. In short, this app aims to provide the user with an all-in-one PS5 gaming library, news hub and achievement journal. 
