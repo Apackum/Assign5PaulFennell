@@ -62,12 +62,23 @@ public class CurrentGamesList extends Fragment {
         // Required empty public constructor
     }
 
+    /**
+     * This add the sign out and add buttons
+     * @param savedInstanceState
+     */
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
     }
 
+    /**
+     *This creates the view and inflates the fragment and displays all things
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -96,6 +107,7 @@ public class CurrentGamesList extends Fragment {
 
     //Methods
 
+    //This method is used to add and request from the firebase database
     private void getDataFromFirebase() {
         //Creating a query for firebase realtime database
         Query query = myRef.child("games");
@@ -143,12 +155,21 @@ public class CurrentGamesList extends Fragment {
         }
     }
 
+    /**
+     * This add the sign out and add buttons
+     * @param menu
+     * @param inflater
+     */
     @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.menu, menu);
     }
 
-
+    /**
+     * This add the sign out and add buttons
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 

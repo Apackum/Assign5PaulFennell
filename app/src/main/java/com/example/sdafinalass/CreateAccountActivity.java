@@ -47,7 +47,10 @@ public class CreateAccountActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private Button creatAccountButton;
 
-
+    /**
+     * this is the oncreate for this class
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,6 +105,13 @@ public class CreateAccountActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * this is the method for saving an account to firebase
+     * and it opens up the post activity
+     * @param email
+     * @param password
+     * @param username
+     */
     private void createUserEmailAccount(String email, String password, String username){
 
         if(!TextUtils.isEmpty(email) && !TextUtils.isEmpty(password) && !TextUtils.isEmpty(username)) {
@@ -172,7 +182,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                     }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
-
+                    //this asks for the correct details
                     Log.d("Firebase", "onFailure: " + e.toString());
                     if( password.length() <= 5) {
 

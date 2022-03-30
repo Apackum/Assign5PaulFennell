@@ -49,6 +49,10 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseFirestore database = FirebaseFirestore.getInstance();
     private CollectionReference collectionReference = database.collection("Users");
 
+    /**
+     * this is the create on method and is used to save the instance state
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,6 +89,12 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * this is used to check the email and password for the firestore data base
+     * and checks if the user exists
+     * @param email
+     * @param password
+     */
     private void emailPasswordUserLogin(String email, String password) {
 
         progressBar.setVisibility(View.VISIBLE);

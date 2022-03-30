@@ -31,6 +31,10 @@ public class LibraryViewAdapter extends RecyclerView.Adapter<LibraryViewAdapter.
         TextView gameDescription;
         ImageButton currentFavouriteButton;
 
+        /**
+         * find the fields and attaches them
+         * @param itemView
+         */
         ViewHolder(@NonNull View itemView) {
             super(itemView);
             //grab the image, the text and the layout id's
@@ -54,12 +58,23 @@ public class LibraryViewAdapter extends RecyclerView.Adapter<LibraryViewAdapter.
     private final Context mNewContext;
     private final ArrayList<GameListCurrentModel> currentGames;
 
+    /**
+     * creates arraylist and attaches to adapter
+     * @param mNewContext
+     * @param currentGames
+     */
     public LibraryViewAdapter(Context mNewContext, ArrayList<GameListCurrentModel> currentGames) {
         this.mNewContext = mNewContext;
         this.currentGames = currentGames;
 
     }
 
+    /**
+     * attaches the layout file
+     * @param parent
+     * @param viewType
+     * @return
+     */
     //declare methods
     @NonNull
     @Override
@@ -68,6 +83,11 @@ public class LibraryViewAdapter extends RecyclerView.Adapter<LibraryViewAdapter.
         return new ViewHolder(view);
     }
 
+    /**
+     * sets the varible to the holder and images
+     * @param viewHolder
+     * @param position
+     */
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, final int position) {
         Log.d(TAG, "onBindViewHolder: was called");
@@ -80,12 +100,12 @@ public class LibraryViewAdapter extends RecyclerView.Adapter<LibraryViewAdapter.
                 .load(currentGames.get(position).getGimage())
                 .into(viewHolder.gameImage);
 
-//        //should check here to see if the book is available.
-//        viewHolder.checkOut.setOnClickListener(v -> {
-//            Intent myOrder = new Intent(mNewContext, CheckOut.class);
-//            mNewContext.startActivity(myOrder);
-//        });
     }
+
+    /**
+     * get the size of the items
+     * @return
+     */
     //Set item count to the number of booklist items
     @Override
     public int getItemCount() {

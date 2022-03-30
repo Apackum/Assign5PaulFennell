@@ -28,6 +28,12 @@ public class GameRecyclerAdapter extends RecyclerView.Adapter<GameRecyclerAdapte
         this.gamesStore = gamesStores;
     }
 
+    /**
+     * creates viewholder
+     * @param parent
+     * @param viewType
+     * @return
+     */
     @NonNull
     @Override
     public GameRecyclerAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -35,6 +41,11 @@ public class GameRecyclerAdapter extends RecyclerView.Adapter<GameRecyclerAdapte
         return new ViewHolder(view, context);
     }
 
+    /**
+     * adds the lists and creates a holder for them
+     * @param holder
+     * @param position
+     */
     @Override
     public void onBindViewHolder(@NonNull GameRecyclerAdapter.ViewHolder holder, int position) {
 
@@ -44,6 +55,7 @@ public class GameRecyclerAdapter extends RecyclerView.Adapter<GameRecyclerAdapte
         holder.aDescription.setText(gamesStore.getGameDescription());
         holder.aUser.setText(gamesStore.getUserName());
         imageUrl = gamesStore.getImageUrl();
+        //This adds the time since uploaded to the adateadded variable
         String timeAgo = (String) DateUtils.getRelativeTimeSpanString(gamesStore
                 .getTimeAdded()
                 .getSeconds() * 1000);
@@ -58,6 +70,10 @@ public class GameRecyclerAdapter extends RecyclerView.Adapter<GameRecyclerAdapte
                 .into(holder.aImage);
     }
 
+    /**
+     * set item size
+     * @return
+     */
     @Override
     public int getItemCount() {
         return gamesStore.size();
@@ -71,7 +87,11 @@ public class GameRecyclerAdapter extends RecyclerView.Adapter<GameRecyclerAdapte
         public ImageButton shareButton;
         String userId, username;
 
-
+        /**
+         * finds the items within the xml file
+         * @param itemView
+         * @param ctx
+         */
         public ViewHolder(@NonNull View itemView, Context ctx) {
             super(itemView);
             context = ctx;

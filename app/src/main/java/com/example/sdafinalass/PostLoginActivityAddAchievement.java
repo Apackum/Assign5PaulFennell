@@ -61,7 +61,10 @@ public class PostLoginActivityAddAchievement extends AppCompatActivity implement
     private CollectionReference collectionReference = db.collection("Achievements");
     private Uri imageUri;
 
-
+    /**
+     *  on create for the post login activity
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -110,6 +113,10 @@ public class PostLoginActivityAddAchievement extends AppCompatActivity implement
 
     }
 
+    /**
+     * This is the view for the two buttons that save and add a picture from the users gallery
+     * @param v
+     */
     @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
@@ -205,6 +212,12 @@ public class PostLoginActivityAddAchievement extends AppCompatActivity implement
         }
     }
 
+    /**
+     * set the image method
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

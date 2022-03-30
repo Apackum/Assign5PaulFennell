@@ -33,6 +33,9 @@ import java.util.Objects;
 import ui.ViewPageAdapter;
 import util.GamesApi;
 
+/**
+ * Main activity
+ */
 public class MainActivity extends AppCompatActivity   {
     private static final String TAG = "MainActivity";
 
@@ -47,6 +50,10 @@ public class MainActivity extends AppCompatActivity   {
 
     ViewPager viewPager;
 
+    /**
+     * This is the onCreate method for my main activity.class
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +71,10 @@ public class MainActivity extends AppCompatActivity   {
 
 
         authStateListener = new FirebaseAuth.AuthStateListener() {
+            /**
+             * This listens for the firebase authentication
+             * @param firebaseAuth
+             */
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 firebaseUser = firebaseAuth.getCurrentUser();
@@ -73,7 +84,14 @@ public class MainActivity extends AppCompatActivity   {
 
                     collectionReference
                             .whereEqualTo("userId", currentUserId)
+
                             .addSnapshotListener(new EventListener<QuerySnapshot>() {
+
+                                /**
+                                 * This add snapshot to the variables
+                                 * @param value
+                                 * @param error
+                                 */
                                 @Override
                                 public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
                                     if (error != null) {
@@ -105,6 +123,7 @@ public class MainActivity extends AppCompatActivity   {
 
 
     @Override
+
     protected void onStart() {
         super.onStart();
         firebaseUser = firebaseAuth.getCurrentUser();

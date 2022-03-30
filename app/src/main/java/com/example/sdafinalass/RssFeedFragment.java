@@ -55,13 +55,24 @@ public class RssFeedFragment extends Fragment {
         // Required empty public constructor
     }
 
+    /**
+     * This add the sign out and add buttons
+     * @param savedInstanceState
+     */
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
     }
 
-
+    /**
+     * this infaltes, contains saves the instance state of the create view
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * returns view
+     * @return
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -91,6 +102,11 @@ public class RssFeedFragment extends Fragment {
         return view;
     }
 
+    /**
+     * uses the input stream api to gather data for the rss feed
+     * @param url
+     * @return
+     */
     public InputStream getInputStream(URL url) {
         try {
             return url.openConnection().getInputStream();
@@ -114,6 +130,11 @@ public class RssFeedFragment extends Fragment {
             progressDialog.show();
         }
 
+        /**
+         * finds the feed and sets it the variables within the fragment
+         * @param integers
+         * @return
+         */
         @Override
         protected Exception doInBackground(Integer... integers) {
             try {
@@ -178,6 +199,10 @@ public class RssFeedFragment extends Fragment {
             return exception;
         }
 
+        /**
+         * set the layout for the list view in the cml file
+         * @param s
+         */
         @Override
         protected void onPostExecute(Exception s) {
             super.onPostExecute(s);
@@ -190,12 +215,21 @@ public class RssFeedFragment extends Fragment {
         }
     }
 
+    /**
+     * This add the sign out and add buttons
+     * @param menu
+     * @param inflater
+     */
     @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.menu, menu);
     }
 
-
+    /**
+     * This add the sign out and add buttons
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 

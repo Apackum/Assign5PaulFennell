@@ -16,11 +16,22 @@ public class ViewPageAdapter extends FragmentPagerAdapter {
 
     private Context context;
 
+    /**
+     *
+     * @param fm
+     * @param behavior
+     * @param nContext
+     */
     public ViewPageAdapter(FragmentManager fm, int behavior, Context nContext) {
         super(fm, behavior);
         context = nContext;
     }
 
+    /**
+     * sets the fragments position
+     * @param position
+     * @return
+     */
     @NonNull
     @Override
     public Fragment getItem(int position) {
@@ -57,11 +68,20 @@ public class ViewPageAdapter extends FragmentPagerAdapter {
         return fragment;
     }
 
+    /**
+     * gets count
+     * @return
+     */
     @Override
     public int getCount() {
         return 4;
     }
 
+    /**
+     * adds a page title the pager and its position
+     * @param position
+     * @return
+     */
     @Override
     public CharSequence getPageTitle(int position) {
         position = position+1;

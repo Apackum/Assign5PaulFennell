@@ -48,12 +48,24 @@ public class WelcomeFragment extends Fragment {
         // Required empty public constructor
     }
 
+    /**
+     * This add the sign out and add buttons
+     * @param savedInstanceState
+     */
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
     }
 
+    /**
+     * This is the create view for the welcome fragment
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * returns view
+     * @return
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -69,6 +81,11 @@ public class WelcomeFragment extends Fragment {
         firebaseUser = firebaseAuth.getCurrentUser();
 
         authStateListener = new FirebaseAuth.AuthStateListener() {
+
+            /**
+             * listener for firebase changes and such
+             * @param firebaseAuth
+             */
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 firebaseUser = firebaseAuth.getCurrentUser();
@@ -122,12 +139,21 @@ public class WelcomeFragment extends Fragment {
 
     }
 
+    /**
+     * This add the sign out and add buttons
+     * @param menu
+     * @param inflater
+     */
     @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.menu, menu);
     }
 
-
+    /**
+     * This add the sign out and add buttons
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
